@@ -12,11 +12,14 @@ export class Empleado {
   nombre="Eduardo";
   apellido="Martín-Sonseca";
   edad=26;
-  empresa="Empresa X";
+  //empresa="Empresa X";
 
   
   public getEdad(){
     return this.edad;
   }
-  
+
+  cambioEmpresa(value:string){
+    
+  }
 }

@@ -1,4 +1,5 @@
 <p>Nombre del empleado: {{ nombre }}</p>
 <p>Apellido del empleado: {{ apellido }}</p>
-<p>Edad del empleado: {{ edad<=18 ? "Eres menor de edad": "Eres mayor de edad" }}</p>
-<p>Empresa del empleado: {{ empresa }}</p>
+<p>Edad del empleado: {{ edad<=18 ? "Eres menor de edad" : "Eres mayor de edad" }}</p>
+        <p>Empresa del empleado: {{ empresa.value }}</p>
+        Introduce la empresa: <input (keyup)="0" type="text" #empresa>
