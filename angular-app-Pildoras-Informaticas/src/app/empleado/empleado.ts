@@ -13,13 +13,29 @@ export class Empleado {
   apellido="Martín-Sonseca";
   edad=26;
   //empresa="Empresa X";
+  habilitarCuadro = true
+  userRegister=false
+  textoDeRegistro="No hay nadie registrado";
 
   
   public getEdad(){
     return this.edad;
   }
 
-  cambioEmpresa(value:string){
-    
+
+  getRegistroUser(){
+    this.userRegister=false
+  }
+
+  //Evento en el que se muestra un mensaje cuando el usuario se registra,
+  //y otro mensaje cuando el usuario no se registra, dependiendo del valor del input
+  setUsuarioRegistrado(event:Event){
+    this.textoDeRegistro="El usuario se acaba de registrar"
+
+    if((<HTMLInputElement>event.target).value === "Si"){
+      this.textoDeRegistro="El usuario se acaba de registrar"
+  } else {
+    this.textoDeRegistro="El usuario no se ha registrado"
+}
   }
 }
