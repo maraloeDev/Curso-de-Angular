@@ -1,8 +1,0 @@
-Que es un SPA
-
-Hay 2 partes en un SPA:
-1. El cliente: Es la parte que se ejecuta en el navegador del usuario, es la encargada de mostrar la interfaz de usuario y manejar las interacciones del usuario.
-2. El servidor: Es la parte que se ejecuta en el servidor, es la encargada de manejar las solicitudes del cliente y enviar los datos necesarios para que el cliente pueda mostrar la interfaz de usuario.
-
-Cada peticion que hacemos a la paginal web, el servidor nos devuelve un documento HTML, que es el que se muestra en el navegador.
-En un SPA, el servidor solo devuelve un documento HTML una vez y luego el cliente se encarga de manejar las interacciones del usuario y actualizar la interfaz de usuario 

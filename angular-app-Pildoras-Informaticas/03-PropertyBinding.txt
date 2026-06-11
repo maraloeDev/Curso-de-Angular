@@ -1,2 +1,0 @@
-El property Binding es crear un puente entre las propiedades  del objeto, nos sirve para poder midufucar las propiedades de un objeto en ejecución
-
