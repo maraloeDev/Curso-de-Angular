@@ -1,0 +1,3 @@
+El EventBinding nos permite escuchar eventos y ejecutar código en respuesta a esos eventos.
+permitiéndonos reaccionar a acciones del usuario como clics
+

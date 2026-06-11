@@ -1,0 +1,3 @@
+El Binding bidireccional hay actualizaciones en tiempo real.
+
+Es decir, ocurre en tiempo de ejecución, es decir, el usuario puede modificar el valor de una propiedad y ese valor se actualiza en la vista, y a su vez, si el valor de esa propiedad se modifica en la vista, también se actualiza en el componente.
