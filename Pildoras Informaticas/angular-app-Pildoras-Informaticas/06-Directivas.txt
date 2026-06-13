@@ -1,0 +1,27 @@
+Las directivas son elementos que vamos aplicando a las etiquetas HTML, y añaden alguna funcionalidad a los elementos de la página web.
+
+Los tipos de directivas más comunes son:
+
+1. Directiva de tipo componente: Son aquellas que permiten crear un componente reutilizable en la aplicación
+
+2. Directiva de tipo Estructural: Son aquellas que permiten modificar la estructura del DOM, es decir, agregar o eliminar elementos del DOM.
+
+3. Directiva de tipo Atributo: Son aquellas que permiten modificar el comportamiento o apariencia de un elemento HTML, agregando o cambiando atributos del mismo.
+
+Atributos
+    ngClass: Permite agregar o quitar clases CSS a un elemento HTML de manera dinámica.
+    ngStyle: Permite agregar o quitar estilos CSS a un elemento HTML de manera dinámica.
+    ngModel: Permite enlazar el valor de un elemento HTML con una variable del componente, permitiendo la actualización bidireccional de datos.
+
+Esctuctural
+    ngIf: Permite mostrar u ocultar un elemento HTML en función de una condición.
+    ngFor: Permite iterar sobre una colección de datos y generar elementos HTML para cada uno de ellos.
+    ngSwitch: Permite mostrar u ocultar elementos HTML en función de un valor específico.
+    ngPlural: Permite mostrar u ocultar elementos HTML en función de un valor específico, similar a ngSwitch pero con soporte para pluralización.
+    ngTemplate: Permite definir una plantilla HTML que puede ser reutilizada en diferentes partes de la aplicación.
+    ngComponentOutlet: Permite renderizar un componente dinámicamente en función de una condición o valor específico.
+
+    Componente
+    Angular
+        @Component: Permite definir un componente en Angular, especificando su selector, plantilla y estilos.
+        @Module: Permite definir un módulo en Angular, especificando los componentes, directivas y servicios que pertenecen a él.
