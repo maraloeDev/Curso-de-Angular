@@ -3,11 +3,11 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
-    "analytics": "40bdf880-eb8b-4943-8177-7318c84ff792"
+    "analytics": "dbe438ac-1e5a-4e14-830d-a4d01b38220a"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "mini-calculadora-app": {
+    "Ejercicios": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -65,10 +65,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "mini-calculadora-app:build:production"
+              "buildTarget": "Ejercicios:build:production"
             },
             "development": {
-              "buildTarget": "mini-calculadora-app:build:development"
+              "buildTarget": "Ejercicios:build:development"
             }
           },
           "defaultConfiguration": "development"
