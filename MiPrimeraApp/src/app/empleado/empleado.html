@@ -1,0 +1,7 @@
+<p>Nombre del empleado: {{ nombre }}</p>
+<p>Apellido del empleado: {{ apellido }}</p>
+<p>Edad del empleado: {{ edad<18 ?"Es mayor de edad":"Es menor de edad" }}</p>
+<p>Empresa del empleado: {{ empresa.value }}</p>
+<br>
+Nombre de la Empresa: <input type="text" #empresa placeholder="Nombre de la empresa"(keyup)="0"> 
+<!-- El (keyup)="0" es para que se actualice el valor en tiempo real -->
