@@ -1,0 +1,5 @@
+El binding bidireccional va por 2 direcciones, crear un puente entre el ts y el html como del html al ts, ocurre en tiempo de ejecución
+
+Para crear un binding, necesitaremos 
+ directiva ngModel Enlazar campos de formulario con propiedades del componente
+ y banana in Box [()] Combinar Property + Event Binding en una sola expresión más corta

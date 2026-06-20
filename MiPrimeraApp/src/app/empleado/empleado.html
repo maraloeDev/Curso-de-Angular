@@ -1,13 +1,15 @@
 <p>Nombre del empleado: {{ nombre }}</p>
 <p>Apellido del empleado: {{ apellido }}</p>
 <p>Edad del empleado: {{ edad<18 ?"Es mayor de edad":"Es menor de edad" }}</p>
-<p>Empresa del empleado: {{ empresa.value }}</p>
+<p>Empresa del empleado: {{ empresa }}</p>
 <br>
-Nombre de la Empresa: <input type="text" #empresa placeholder="Nombre de la empresa"(keyup)="0" [disabled]="habilitacionCuadro">
+<!-- Nombre de la Empresa: <input type="text" #empresa placeholder="Nombre de la empresa"(keyup)="0" [disabled]="habilitacionCuadro"> -->
 <!-- El (keyup)="0" es para que se actualice el valor en tiempo real -->
+
+Introduce la Empresa: <input type="text" [(ngModel)]="empresa">
 
 <br><br>
 
-Registrado <input type="checkbox" id="registro" [checked]="botonRegistro">
-
-{{ getRegistroUsuario() }}
+Registrado <input (click)="setUsuarioRegistrado($event)" type="radio" id="nRegistro" name="registro" value="si" [checked]="botonRegistro"><br>
+No Registrado <input (click)="setUsuarioRegistrado($event)" type="radio" id="nRegistro" name="registro" value="no" [checked]="botonRegistro"><br>
+<p>{{ textoRegistro }}</p>
