@@ -12,9 +12,18 @@ export class Empleado {
   apellido="Martín-Sonseca";
   edad=26;
   //empresa="Empresa";
+  habilitacionCuadro = true;
+  botonRegistro=false;
 
   
   public getEdad() {
     return this.edad;
+  }
+
+  /**
+   * funcion en el que activo el boton del registro
+   */
+  public getRegistroUsuario(){
+    this.botonRegistro=true
   }
 }

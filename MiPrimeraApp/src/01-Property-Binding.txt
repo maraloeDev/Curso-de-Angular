@@ -1,0 +1,1 @@
+El property binding es para enlazar datos de forma unidireccional entre el archivo ts y el html para inicializarlo se utilizan los corchetes
