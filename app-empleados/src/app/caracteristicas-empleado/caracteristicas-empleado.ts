@@ -7,6 +7,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrl: './caracteristicas-empleado.css',
 })
 export class CaracteristicasEmpleado {
+  // El output sirve para emitir eventos desde el componente hijo al componente padre
   @Output() CaracteristicasEmpleado = new EventEmitter<string>()
 
   agregaCaracteristicas(nuevaCaracteristica:string) {

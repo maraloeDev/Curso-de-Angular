@@ -9,6 +9,7 @@ import { CaracteristicasEmpleado } from '../caracteristicas-empleado/caracterist
   styleUrl: './empleado-hijo.css',
 })
 export class EmpleadoHijo {
+  // El input sirve para recibir datos desde el componente padre al componente hijo
   @Input() empleadoDeLista: Empleado;
   @Input() indice: number;
 
