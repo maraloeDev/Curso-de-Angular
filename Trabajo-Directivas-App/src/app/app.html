@@ -1,0 +1,24 @@
+<h1>{{ titulo }}</h1>
+<form>
+
+  <input type="text" name="nombre" [(ngModel)]="nombre"><br>
+  <input type="text" name="apellido" [(ngModel)]="apellido"><br>
+
+  <input (click)="registrarUsuario()" type="submit" name="Registrar" value="Registrar">
+</form>
+
+@if (registrado) {
+<p>{{ mensaje }} con el nombre de {{ nombre }} y apellidos {{ apellido }}</p>
+} @else {
+<p>No hay nadie registrado</p>
+}
+
+<br>
+<ul>
+
+@for (entrada of entradas; track $index) {
+
+  <li>{{ entrada.titule}}</li>
+
+}
+</ul>
