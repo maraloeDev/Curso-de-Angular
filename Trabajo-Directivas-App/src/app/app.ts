@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [FormsModule],
+  imports: [FormsModule, NgClass],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
@@ -13,6 +14,7 @@ export class App {
   registrado = false;
   nombre='';
   apellido='';
+  cargo='';
   entradas= [
       {titule:"Python es lo mejor"},
       {titule:"La IA no vale para nada"},
