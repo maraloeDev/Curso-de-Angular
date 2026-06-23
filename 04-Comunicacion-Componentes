@@ -1,0 +1,2 @@
+Los decoradores input nos permite pasar información desde un componente padre a un componente hijo en Angular
+Los decoradores output nos permiten enviar información desde un componente hijo a un componente padre en Angular
