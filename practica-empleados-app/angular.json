@@ -3,11 +3,11 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
-    "analytics": "bcc7bfb1-1d07-433c-bd19-0eb2f19bd69a"
+    "analytics": "8cb47e7d-4020-4b41-bd26-41a6d7a4b56b"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "app-empleados": {
+    "practica-empleados-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -26,15 +26,7 @@
               }
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
-            ],
-
-            "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/popper.js/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
-
+              "src/styles.css"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -73,10 +65,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "app-empleados:build:production"
+              "buildTarget": "practica-empleados-app:build:production"
             },
             "development": {
-              "buildTarget": "app-empleados:build:development"
+              "buildTarget": "practica-empleados-app:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -1,0 +1,3 @@
+El routing sirve para navegar entre diferentes conponentes 
+
+    Las rutas son definiciones que mapean las URLs 

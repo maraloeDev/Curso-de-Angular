@@ -1,5 +1,5 @@
 {
-  "name": "app-empleados",
+  "name": "practica-empleados-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:app-empleados": "node dist/app-empleados/server/server.mjs"
+    "serve:ssr:practica-empleados-app": "node dist/practica-empleados-app/server/server.mjs"
   },
   "private": true,
   "packageManager": "npm@11.13.0",
@@ -20,10 +20,7 @@
     "@angular/platform-server": "^22.0.0",
     "@angular/router": "^22.0.0",
     "@angular/ssr": "^22.0.3",
-    "bootstrap": "^5.3.8",
     "express": "^5.1.0",
-    "jquery": "^4.0.0",
-    "popper.js": "^1.16.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
