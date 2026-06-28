@@ -33,24 +33,17 @@
 
     <div class="col">
 
-      <input style="margin-top: 35px;" (click)="agregarEmpleado()" class="btn btn-primary" type="submit" value="Agregar Empleado">
+      <button style="margin-top: 35px;" (click)="agregarEmpleado()" class="btn btn-primary" type="button">
+        Agregar Empleado
+      </button>
 
     </div>
   </form>
 </div>
 
 <br><br>
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <ul style="list-style: none;">
-
-        @for (empleado of empleados; track $index) {
-
-        <li> {{ $index + 1 }} : {{ empleado.nombre }} {{ empleado.apellido }} {{ empleado.cargo }} {{ empleado.salario
-          }} </li> }
-
-      </ul>
-    </div>
-  </div>
-</div>
+<app-empleado-hijo
+  *ngFor="let empleado of empleados; let index = index"
+  [empleadoDeLista]="empleado"
+  [indice]="index">
+</app-empleado-hijo>

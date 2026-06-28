@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Empleado } from './empleados-module';
+import { EmpleadoHijo } from './empleado-hijo/empleado-hijo';
 
 @Component({
   selector: 'app-root',
-  imports: [FormsModule],
+  imports: [CommonModule, FormsModule, EmpleadoHijo],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
