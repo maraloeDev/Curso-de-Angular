@@ -1,7 +1,3 @@
 <label>Caracteristica</label>
 <input type="text" #nuevaCaracteristica>
 <button (click)="agregarCaracteristica(nuevaCaracteristica.value)" class="btn btn-primary">Añadir Caracteristica</button>
-
-<ul>
-      @for (arraycaracteristica of arrayCaracteristicas; track $index) { {{   arrayCaracteristicas }} }
-    </ul>

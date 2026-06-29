@@ -5,6 +5,10 @@
     </div>
     <app-caracteristicas-empleado (caracteristicaEmpleado)="agregarCaracteristica($event)"></app-caracteristicas-empleado>
 
+    <ul style="list-style: none;">
+      @for (caracteristica of arrayCaracteristicas; track $index) { <li>{{ caracteristica }}</li>  }
+    </ul>
+
     
   </div>
 </div> 
