@@ -3,5 +3,8 @@
     <div class="col">
       {{ indice+1 }} {{empleadoDeLista.nombre}} {{ empleadoDeLista.apellido }} {{ empleadoDeLista.cargo }} {{ empleadoDeLista.salario }}
     </div>
+    <app-caracteristicas-empleado (caracteristicaEmpleado)="agregarCaracteristica($event)"></app-caracteristicas-empleado>
+
+    
   </div>
 </div> 

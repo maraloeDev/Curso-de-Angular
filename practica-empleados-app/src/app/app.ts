@@ -13,13 +13,14 @@ import { EmpleadoHijo } from './empleado-hijo/empleado-hijo';
 export class App {
   titulo = 'Listado de empleados';
 
-  //Array de empleados
+    //Array de empleados
   empleados: Empleado[] = [
     new Empleado('John', 'Doe', 'Developer', 50000),
     new Empleado('Jane', 'Smith', 'Designer', 60000),
     new Empleado('Mike', 'Johnson', 'Manager', 70000),
     new Empleado('Emily', 'Davis', 'Tester', 55000),
   ];
+
 
   cuadroNombre="";
   cuadroApellido="";
