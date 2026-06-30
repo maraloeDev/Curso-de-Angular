@@ -1,21 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Empleado } from './empleados-module';
 import { EmpleadoHijo } from './empleado-hijo/empleado-hijo';
 import { ServicioEmpleados } from './servicio-empleados';
+import { EmpleadosService } from './empleados-service';
 
 @Component({
   selector: 'app-root',
   imports: [CommonModule, FormsModule, EmpleadoHijo],
   templateUrl: './app.html',
   styleUrl: './app.css',
-  providers: [ServicioEmpleados],
+  providers: [ServicioEmpleados, EmpleadosService],
 })
-export class App {
+export class App implements OnInit {
   titulo = 'Listado de empleados';
 
-  constructor(private miServicio: ServicioEmpleados) { }
+  constructor(
+    private miServicio: ServicioEmpleados,
+    private empleadosService: EmpleadosService,
+  ) {}
+
+  ngOnInit(): void {
+    //En el array de empleados, almacenamos la información que viene del servicio
+    this.empleados = this.empleadosService.empleados;
+  }
 
   //Array de empleados
   empleados: Empleado[] = [
@@ -31,7 +40,15 @@ export class App {
   cuadroSalario = 0;
 
   agregarEmpleado() {
-    this.miServicio.muestraMensaje("Nombre del empleado " + this.cuadroNombre + "\nApellido " + this.cuadroApellido);
-    this.empleados.push(new Empleado(this.cuadroNombre, this.cuadroApellido, this.cuadroCargo, this.cuadroSalario));
+    let miEmpleado = new Empleado(
+      this.cuadroNombre,
+      this.cuadroApellido,
+      this.cuadroCargo,
+      this.cuadroSalario,
+    );
+    this.miServicio.muestraMensaje(
+      'Nombre del empleado ' + miEmpleado.nombre + '\nApellido ' + miEmpleado.apellido,
+    );
+    this.empleadosService.agregarEmpleadoServicio(miEmpleado);
   }
 }
