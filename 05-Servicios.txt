@@ -1,2 +1,1 @@
-Una app de Angular esta formada por componentes, 
-un servicio es una clase que se utiliza para encapsular la lógica de negocio, 
+Una app de Angular esta formada por componentes, cuando tenemos varios componentes que necesitan compartir información o funcionalidades se utilizan servicios.
