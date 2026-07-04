@@ -1,8 +1,10 @@
-import { Service } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Empleado } from './empleados-module';
+import { ServicioEmpleados } from './servicio-empleados';
 
-@Service()
+@Injectable({ providedIn: 'root' })
 export class EmpleadosService {
+  constructor(private servicioVentanaEmergente: ServicioEmpleados) {}
   //Array de empleados
   empleados: Empleado[] = [
     new Empleado('John', 'Doe', 'Developer', 50000),
@@ -12,6 +14,9 @@ export class EmpleadosService {
   ];
 
   agregarEmpleadoServicio(empleado: Empleado) {
+    this.servicioVentanaEmergente.muestraMensaje(
+      'Persona que se va a agregar \n' + empleado.nombre + '\n Salario: ' + empleado.salario,
+    );
     this.empleados.push(empleado);
   }
 }

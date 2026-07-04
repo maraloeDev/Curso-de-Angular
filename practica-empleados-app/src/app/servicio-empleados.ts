@@ -1,10 +1,10 @@
-import { Service } from '@angular/core';
+import { Injectable } from '@angular/core';
 
-@Service()
+@Injectable({
+  providedIn: 'root'
+})
 export class ServicioEmpleados { 
-
-
-    muestraMensaje(mensaje:string) {
-        alert(mensaje)
-    }
- }
+  muestraMensaje(mensaje:string) {
+    alert(mensaje)
+  }
+}
