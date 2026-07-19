@@ -3,5 +3,7 @@
     </div>
     
 <br><br>
-<app-empleado-hijo *ngFor="let empleado of empleados; let index = index" [empleadoDeLista]="empleado" [indice]="index">
-</app-empleado-hijo>
+<div *ngFor="let empleado of empleados; let index = index" class="empleado-item">
+    <app-empleado-hijo [empleadoDeLista]="empleado" [indice]="index"></app-empleado-hijo>
+    
+</div>
